@@ -75,6 +75,10 @@ hr {
 	border: 0;
 	margin: 10px auto 30px;
 }
+video {
+	max-width: 100%;
+	height: auto;
+}
 
 .video-responsive{
     overflow:hidden;
@@ -759,7 +763,6 @@ label {
   .carousel-col                { width: 50%; }
 	.active > div:first-child + div { display:block; }
 }
-
 
 @media (min-width: 910px) {
   .carousel-inner > .item.next,
