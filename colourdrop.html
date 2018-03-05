@@ -36,8 +36,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body onload="loading()" style="margin:0;">
 
+<div id="loader"></div>
+<div style="display:none;" id="bodyDiv">
 <header class="text-left" name="home" style = "background-image:url('img/colourDrop/colourDropCover.jpg')">
   <div class="brief-text">
     <h1 class = "animated slideInUp">Colour Drop 21</h1>
@@ -54,7 +56,8 @@
 <div id="project-section">
   <div class="container">
     <div class="section-title text-center center">
-		<video autoplay loop>
+		
+		<video align = "right!important" autoplay loop>
 			<source src="img/colourDrop/colourDrop01.mp4" type="video/mp4">
 			Why you no support mp4? Boooo!
 		</video>
@@ -220,8 +223,10 @@
 	<div class = "col-md-12">
 		<br/><br/>
 		<h4> Final Documentation</h4>
-		<iframe src="https://player.vimeo.com/video/247911583?title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	  </div>
+			<div class= "video-responsive">
+			<iframe src="https://player.vimeo.com/video/247911583?title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+		</div> 
 	 </div>
 	<div class="clearfix"></div>
 	<br/>
@@ -251,10 +256,21 @@
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
-
+</div>
 <!-- Javascripts
     ================================================== --> 
 <script>
+var load;
+
+function loading() {
+    load = setTimeout(showPage, 10);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("bodyDiv").style.display = "block";
+}
+
    /* ==============================================
   	Photo Slideshow
   	=============================================== */ 	 
