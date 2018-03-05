@@ -36,8 +36,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-
+<body onload="loading()">
+<div id="loader"></div>
+<div style="display:none;" id="bodyDiv">
 <!-- Header -->
 <header class="text-left" name="home">
   <div class="intro-text">
@@ -206,9 +207,23 @@
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
 
+</div>
 <!-- Javascripts
     ================================================== --> 
 <script>
+   /* ==============================================
+  	Loader
+  	=============================================== */ 	 
+var load;
+
+function loading() {
+    load = setTimeout(showPage, 300);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("bodyDiv").style.display = "block";
+}
 
 	function clickIntroYes() {
 		var x = document.getElementById("yesText");	
