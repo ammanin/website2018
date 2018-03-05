@@ -186,12 +186,12 @@ header p {
 }
 .intro-text {
 	position: relative;
+	padding-left:8%;	
 	padding-top: 180px;
 	padding-bottom: 20px;
 	height: 100%;
 }
 .intro-text H1 {
-	padding-left:100px;
 	font-size: 60px;
 	letter-spacing:15px;	
 	text-transform: uppercase;
@@ -200,7 +200,6 @@ header p {
 	font-weight:700;
 }
 .intro-text H2{
-	padding-left:100px;	
 	font-size: 53px;
 	padding-top:14px;
 	text-transform: uppercase;
@@ -209,7 +208,6 @@ header p {
 	animation-delay: .5s;
 }
 .intro-text H3{
-	padding-left:100px;	
 	font-size: 70px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -220,7 +218,6 @@ header p {
 }
 
 .intro-text H4{
-	padding-left:100px;	
 	color: rgb(240,240,240);
 	font-size: 19px;
 	line-height:26.5px;
@@ -293,13 +290,13 @@ header a:active {
 } 
 .brief-text {
 	position: relative;
+	padding-left:8%;		
 	padding-top: 180px;	
 	padding-bottom: 20px;
 	height: 100%;
 	max-width: 700px;
 }
 .brief-text H1 {
-	padding-left:100px;
 	font-size: 53px;
 	letter-spacing:1px;	
 	text-transform: uppercase;
@@ -308,15 +305,13 @@ header a:active {
 	font-weight:700;
 }
 .brief-text H2{
-	padding-left:100px;	
 	font-size: 40px;
 	text-transform: uppercase;
 	color: rgb(240,240,240);
 	animation-duration: 2.2s;
 	animation-delay: .5s;
 }
-.brief-text H3{
-	padding-left:100px;	
+.brief-text H3{	
 	font-size: 70px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -327,7 +322,6 @@ header a:active {
 }
 
 .brief-text H4{
-	padding-left:100px;	
 	color: rgb(240,240,240);
 	font-size: 19px;
 	letter-spacing:.4px;
