@@ -36,8 +36,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-
+<body onload="loading()">
+<div id="loader"></div>
+<div style="display:none;" id="bodyDiv">
 <header class="text-left" name="home" style = "background-image:url('img/lunadot/lunadotCover.jpg')">
   <div class="brief-text">
     <h1 class = "animated SlideInUp">Lunadot Eco Pads</h1>
@@ -176,10 +177,24 @@
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/contact_me.js"></script> 
-
+</div>
 <!-- Javascripts
     ================================================== --> 
 <script>
+   /* ==============================================
+  	Loader
+  	=============================================== */ 	 
+var load;
+
+function loading() {
+    load = setTimeout(showPage, 10);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("bodyDiv").style.display = "block";
+}
+
    /* ==============================================
   	Photo Slideshow
   	=============================================== */ 	 
