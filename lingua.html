@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lingua</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.jpg">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.jpg">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.jpg">
+
+<!-- Animations -->
+<link rel="stylesheet" type="text/css"  href="css/animate.css">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="text-left" name="home" style = "background-image:url('img/lingua/linguaCover.jpg')">
+  <div class="brief-text">
+    <h1 class = "animated slideInUp">Lingua</h1>
+	<h2 class = "animated slideInLeft">Carnegie Mellon University</h2>
+    <h4 class = "animated fadeInLeft" style = "padding-bottom: 140px"><strong>Role:</strong> Designer & Developer 
+	<small>
+	<br/><br/>A zero UI, voice activated bot which translates any word or sentence from English to another language of your choice.<br/> This was a solo project where I worked with the Amazon Alexa Dot.
+	</small> </h4>
+  </div>	
+	<p class = "text-center" style = "padding-bottom: 50px"><a href="#project-section" class="page-scroll">More</a> | <a href="index.html#works-section">Back</a></p> 	
+</header>
+<!-- Project Section -->
+<div id="project-section">
+  <div class="container">
+    <div class="section-title text-center center">	
+		<video controls>
+			<source src="img/lingua/lingua01.mp4" type="video/mp4">
+			Why you no support mp4? Boooo!
+		</video>
+    </div>
+    <div class="row">
+      <div class="col-md-3 "> <h2>Summary</h2></div>
+      <div class="col-md-9">
+        <div class="project-text">
+			<p>The project was undertaken for my Programming For Online Prototyping class at the Integrated Innovation Institute. It involved designing the interaction of the bot and development of the system architecture, the database and the Amazon Alexa skill.</p>
+		</div>
+      </div>      
+	<div class="clearfix"></div>
+	<br/>
+	<br/>	
+      <div class="col-md-3 "> <h2>Functionality</h2></div>
+      <div class="col-md-9">
+        <div class="project-text">
+			<div class="col-md-4">
+				<h4> Primary Function</h4>
+				<p>Verbally tell Lingua a phrase and the language you want it translated into. You will receive an SMS, as well as, a verbal response with your translation.</p>
+			</div>
+		<div class="col-md-4">
+				<h4>Secondary Function</h4>
+				<p>Users can revisit old translations and play a quizzing game with questions based on previously translated phrases.</p>
+        </div>
+		<div class="col-md-4">
+				<h4> Future Function</h4>
+				<p>Connect to a social API such as Facebook or Twitter where a user can share scores from the quiz or share learning progress.</p>
+        </div>	
+		<img src="img/lingua/lingua02.png" class="img-responsive" alt="Priority Matrix"  style = "width:100%">	
+		<br/>
+		<h4>Software and Network</h4>
+		<p>Lingua integrates three API's in it's functioning. It connects to the Microsoft Translate API for translations. The Alexa API provides the input and speech interaction while the Twilio API provides the SMS feedback. The app was written in Ruby Sinatra and was deployed using the Heroku platform service.</p>
+		</div>
+      </div>      
+	<div class="clearfix"></div>
+	<br/>
+	<br/>      
+	<div class="col-md-3 "> <h2>Interaction Design</h2></div>
+      <div class="col-md-9">
+        <div class="project-text">
+			<p>Lingua is a simple bot, constantly trying to keep you on your toes. When she's not busy helping you out, she's learning new languages and new ways to challenge you. She was designed to be quirky, sarcastic and self-aware.</p>
+			<h4>Interaction Diagram</h4>
+			<img src="img/lingua/lingua04.png" class="img-responsive" alt="Interaction Diagram"  style = "width:100%">	
+		</div>
+      </div>      
+	<div class="clearfix"></div>
+	<br/>
+	<br/>
+	<div class="col-md-3 "> <h2>Data System</h2></div>
+      <div class="col-md-9">
+        <div class="project-text">
+			<p>PostgreSQL was used to build the database. There are 3 databases for the users which include their user details, translation history and quizzing history. A 4th database is used to streamline handling errors. It contains a list of languages for which the Microsoft Translation API offers translations.</p>
+			<img src="img/lingua/lingua05.png" class="img-responsive" alt="Database"  style = "width:100%">	
+        </div>
+		</div>
+      </div>      
+
+	<div class="clearfix"></div>
+	<br/>
+	<br/> 	
+	</div>
+    </div>
+  </div>
+
+<div id="footer">
+  <div class="container">
+    <div class="fnav">
+  	<p style= "font-size:20px;" ><a href="#home" class="page-scroll">Top</a> | <a href="index.html#works-section">Home</a></p>
+	<small>Say hello@ammaninair.com</small>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/jquery.counterup.js"></script> 
+<script type="text/javascript" src="js/waypoints.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<!-- Javascripts
+    ================================================== --> 
+<script>
+   /* ==============================================
+  	Photo Slideshow
+  	=============================================== */ 	 
+
+var sliderObjects = [];
+createSliderObjects();
+
+function plusDivs(obj, n) {
+  var parentDiv = $(obj).parent();
+  var matchedDiv;
+  $.each(sliderObjects, function(i, item) {
+    if ($(parentDiv[0]).attr('id') == $(item).attr('id')) {
+      matchedDiv = item;
+      return false;
+    }
+  });
+  matchedDiv.slideIndex=matchedDiv.slideIndex+n;
+  showDivs(matchedDiv, matchedDiv.slideIndex);
+}
+
+function createSliderObjects() {
+  var sliderDivs = $('.slider');
+  $.each(sliderDivs, function(i, item) {
+    var obj = {};
+    obj.id = $(item).attr('id');
+    obj.divContent = item;
+    obj.slideIndex = 1;
+    obj.slideContents = $(item).find('.mySlides');
+    showDivs(obj, 1);
+    sliderObjects.push(obj);
+  });
+}
+
+function showDivs(divObject, n) {
+  debugger;
+  var i;
+  if (n > divObject.slideContents.length) {
+    divObject.slideIndex = 1
+  }
+  if (n < 1) {
+    divObject.slideIndex = divObject.slideContents.length
+  }
+  for (i = 0; i < divObject.slideContents.length; i++) {
+    divObject.slideContents[i].style.display = "none";
+  }
+  divObject.slideContents[divObject.slideIndex - 1].style.display = "block";
+}
+
+</script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
