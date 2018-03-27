@@ -374,17 +374,17 @@ ol.type li {
 	margin-bottom: 30px;
 }
 ol.type li a {
-	color: rgba(10,10,10, .6);
+	color: rgba(28,61,113,.6);
 	border: 1px solid rgba(10,10,10,.2);
 	padding: 8px 16px;
 	border-radius: 0;
 }
 ol.type li a.active {
-	color:rgb(10,10,10);
+	color:rgb(28,61,113);
 	border: 1.5px solid rgb(241,182,27);
 }
 ol.type li a:hover {
-	color:rgb(10,10,10);
+	color:rgb(28,61,113);
 	border: 2px solid rgb(241,182,27);
 }
 .isotope-item {
